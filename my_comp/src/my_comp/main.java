@@ -72,7 +72,7 @@ public class main {
         	 		
         	 							List<String> variable = new ArrayList<String>();
         	 							List<String> lexem = new ArrayList<String>();
-        	 							variable_table.add(variable);
+        	 							var_table.add(variable);
         	 							lexem_table.add(lexem);
         	 							variable.add(""+end_of_line);
         	 							variable.add(""+word);
@@ -107,13 +107,13 @@ public class main {
         		 
         		 int constant_index = 0;
         		 
-        		 for (;constant_index<constant_table.size();) {
+        		 for (;constant_index<const_table.size();) {
         			 
-        			 if(constant_table.size()>0) {	
-	 					if (!constant_table.get(constant_index).contains(number)){
+        			 if(const_table.size()>0) {	
+	 					if (!const_table.get(constant_index).contains(number)){
 	 					
 	 						ArrayList<String> list = new ArrayList<String>();
-	 						constant_table.add(list); 
+	 						const_table.add(list); 
 	 						list.add(""+end_of_line);
 	 						list.add(""+number);
 	 						list.add(""+constant_index);
