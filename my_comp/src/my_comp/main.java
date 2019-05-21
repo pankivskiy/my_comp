@@ -8,17 +8,17 @@ import java.util.Scanner;
 public class main {
 	
  
-    public static void main(String[] args) throws Exception {
+    public static void main (String[] args) throws Exception {
     	
     	String []Keywords= {"start","float","for","if","end"};
-		char [] operator = {'+','-','*','/','(',')','<','>',';'};
+		//char [] operator = {'+','-','*','/','(',')','<','>',';'};
 		List<List<String>> lexem_table = new ArrayList<List<String>>();
 		List<List<String>> var_table = new ArrayList<List<String>>();
 		List<List<String>> const_table = new ArrayList<List<String>>();
 		
-		int quantity_lexem=0;
-    	int quantity_variable=0;
-    	int quantity_constant=0;
+		//int quantity_lexem=0;
+    	//int quantity_variable=0;
+    	//int quantity_constant=0;
     	
         FileReader fr= new FileReader("C:\\Users\\oushen\\Desktop\\source.txt");
         Scanner scan = new Scanner(fr);
@@ -28,6 +28,7 @@ public class main {
         while ((i=fr.read()) != -1) { 
           str +=((char) i); 
         } 
+        scan.close();
         char [] code=str.toCharArray();
         
        //Start to parse string
